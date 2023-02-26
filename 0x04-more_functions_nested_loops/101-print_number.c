@@ -7,5 +7,5 @@
  */
 void print_number(int n)
 {
-	_putchar(n % 1500 + '0');
+	_putchar(n % 2000 + '0');
 }
