@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - entry point
  * @argc: counter
@@ -13,11 +14,11 @@ int main(int argc, char *argv[])
 
 	i = 1;
 	add = 0;
-	if (argc == 1)
+	if (i == argc)
 	{
 		printf("0\n");
 	}
-	else if (argc > 1)
+	else
 	{
 		while (i < argc)
 		{
