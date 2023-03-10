@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc: counter
@@ -8,13 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, mult;
 
 	i = 1;
-	while (i <= argc)
+	mult = 1;
+	while (i < argc)
 	{
-		return (*argv[i] * *argv[i + 1]);
+		mult = mult * strtol(argv[i], NULL, 10);
 		i++;
 	}
+	printf("%d\n", mult);
 	return (0);
 }
