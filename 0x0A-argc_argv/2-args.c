@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc: cpunter
@@ -19,5 +20,6 @@ int main(int argc, char *argv[])
 			i++;
 		}
 	}
+
 	return (0);
 }
