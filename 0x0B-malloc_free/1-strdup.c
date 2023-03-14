@@ -37,6 +37,7 @@ char *_strdup(char *str)
 				i++;
 			}
 		}
+		sc[len] = '\0';
 		return (sc);
 	}
 }
