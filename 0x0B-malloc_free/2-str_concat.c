@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 		len1++;
 		len2++;
 	}
-	s = malloc(sizeof(char) * len1);
+	s = malloc(sizeof(char) * (len1 + 1));
 	if (s != NULL)
 	{
 		i = 0;
@@ -40,5 +40,5 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-
+	return (s);
 }
