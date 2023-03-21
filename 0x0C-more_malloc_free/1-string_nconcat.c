@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sconc[i] = s1[i];
 		i++;
 	}
-	while (n < l2 && i < (l1 + l2))
+	while (n < l2 && i < (l1 + n))
 	{
 		sconc[i++] = s2[j++];
 	}
