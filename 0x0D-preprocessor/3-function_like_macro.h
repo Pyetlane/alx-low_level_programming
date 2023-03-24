@@ -1,16 +1,4 @@
-#ifndef ABS(x)
-#define ABS(x)
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
+#define ABS(x) ((x) < (0) ? -(x):(x))
 #endif
-/**
- * main - entry point
- *
- * Return: nothing
- */
-int main(void)
-{
-	#if ABS(x) < 0
-	{
-		ABS(x) = ABS(x) * -1;
-	}
-	#endif
-}
